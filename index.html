@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Food Delivery App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>🍔 Food Delivery App</h1>
+
+  <section>
+  <h2>🛒 Place Order</h2>
+  <div class="form-group">
+    <input type="text" id="orderItems" placeholder="Enter items (e.g. Pizza, Coke)" />
+    <select id="deliveryType">
+      <option value="standard">🚚 Standard Delivery</option>
+      <option value="express">⚡ Express Delivery</option>
+      <option value="free">🎁 Free Delivery</option>
+    </select>
+    <button id="placeOrderBtn">✅ Place Order</button>
+    <button id="cancelOrderBtn">❌ Cancel Order</button>
+  </div>
+</section>
+
+  <section>
+    <h2>Notifications</h2>
+    <div id="notifications"></div>
+  </section>
+
+  <section>
+    <h2>Delivery Fee</h2>
+    <div id="feeDisplay">Select delivery type to see fee.</div>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>
